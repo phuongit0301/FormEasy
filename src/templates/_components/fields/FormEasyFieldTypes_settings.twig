@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Form plugin for Craft CMS
+ *
+ * FormEasyFieldTypes Field Settings
+ *
+ * @author    phuongpt
+ * @copyright Copyright (c) 2019 phuongpt
+ * @link      https://github.com/phuongit0301
+ * @package   Form
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("formeasy\\form\\assetbundles\\form\\FormAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}

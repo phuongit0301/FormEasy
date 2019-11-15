@@ -1,0 +1,20 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Form plugin for Craft CMS
+ *
+ * FormEasyWidget Widget Body
+ *
+ * @author    phuongpt
+ * @copyright Copyright (c) 2019 phuongpt
+ * @link      https://github.com/phuongit0301
+ * @package   Form
+ * @since     1.0.0
+ */
+#}
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@formeasy/form/assetbundles/formeasywidgetwidget/dist', true) ~ '/img/FormEasyWidget-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>{{ message }}</p>

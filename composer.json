@@ -1,0 +1,51 @@
+{
+    "name": "formeasy/form",
+    "description": "Form",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "form"
+    ],
+    "support": {
+        "docs": "https://github.com/phuongit0301/FormEasy/form/blob/master/README.md",
+        "issues": "https://github.com/phuongit0301/FormEasy/form/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "phuongpt",
+            "homepage": "https://github.com/phuongit0301"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "formeasy\\form\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Form",
+        "handle": "form",
+        "hasCpSettings": true,
+        "hasCpSection": true,
+        "changelogUrl": "https://raw.githubusercontent.com/phuongit0301/FormEasy/form/master/CHANGELOG.md",
+        "components": {
+            "formEasyService": "formeasy\\form\\services\\FormEasyService"
+        },
+        "class": "formeasy\\form\\Form"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+          "type": "path",
+          "url": "https://github.com/phuongit0301/FormEasy"
+        }
+    ]
+}

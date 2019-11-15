@@ -1,0 +1,46 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Form plugin for Craft CMS 3.x
+ *
+ * Form index.twig
+ *
+ * @author    phuongpt
+ * @copyright Copyright (c) 2019 phuongpt
+ * @link      https://github.com/phuongit0301
+ * @package   Form
+ * @since     1.0.0
+ */
+#}
+
+{% extends "_layouts/cp" %}
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("formeasy\\form\\assetbundles\\form\\FormAsset") %}
+{% do view.registerAssetBundle("formeasy\\form\\assetbundles\\formeasycpsection\\FormEasyCPSectionAsset") %}
+
+{# Link for the ? icon at the bottom of the page #}
+{% set docsUrl = "https://github.com/https://github.com/phuongit0301/FormEasy/form/blob/master/README.md" %}
+
+{# The title of this CP section #}
+{% set title = "Form" %}
+
+{# The URL to this plugin's base CP section #}
+{% set pluginCpUrl = url('form') %}
+
+{# Get a URL to an image in our AssetBundle #}
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@formeasy/form/assetbundles/formeasycpsection/dist', true) ~ '/img/FormEasy-icon.svg' %}
+
+{# Content that should appear in the page header#}
+{% set extraPageHeaderHtml %}
+    <div class="buttons">
+        <a href="{{ pluginCpUrl }}" class="btn submit add icon">{{ "Click Me!"|t('form') }}</a>
+    </div>
+{% endset %}
+
+{# The content of the CP Section#}
+{% set content %}
+    <h2>{{ "FormEasy CP Section body goes here"|t('form') }}</h2>
+    <img src="{{ iconUrl }}" height="64" width="64" />
+    <p class="textline"></p>
+{% endset %}
