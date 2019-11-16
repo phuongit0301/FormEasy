@@ -2,7 +2,6 @@
     "name": "formeasy/form",
     "description": "Form",
     "type": "craft-plugin",
-    "version": "1.0.0",
     "keywords": [
         "craft",
         "cms",
@@ -40,12 +39,11 @@
         },
         "class": "formeasy\\form\\Form"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "prefer-stable": true,
-    "repositories": [
-        {
-          "type": "path",
-          "url": "https://github.com/phuongit0301/FormEasy"
+    "autoload": {
+        "psr-4": {
+            "formeasy\\form\\": "src/"
         }
-    ]
+    }
 }
