@@ -40,10 +40,5 @@
         "class": "formeasy\\form\\Form"
     },
     "minimum-stability": "beta",
-    "prefer-stable": true,
-    "autoload": {
-        "psr-4": {
-            "formeasy\\form\\": "src/"
-        }
-    }
+    "prefer-stable": true
 }
