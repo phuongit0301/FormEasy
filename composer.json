@@ -45,7 +45,10 @@
     "repositories": [
         {
           "type": "path",
-          "url": "https://github.com/phuongit0301/FormEasy"
+          "url": "/Users/phuongphan/Documents/Craft/form",
+          "options": {
+            "symlink": true
+            }
         }
     ]
 }
