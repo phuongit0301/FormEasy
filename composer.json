@@ -39,6 +39,6 @@
         },
         "class": "formeasy\\form\\Form"
     },
-    "minimum-stability": "beta",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
